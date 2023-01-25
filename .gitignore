@@ -1,0 +1,6 @@
+rates.json
+.idea/
+PythonCourse/.envrc
+.DS_Store
+venv/
+*.pyc
