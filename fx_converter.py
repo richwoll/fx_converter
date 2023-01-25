@@ -22,7 +22,7 @@ class FX_Converter:
         self.rates_table = {}
         self.base_rate = 'USD'
     def fetch_new_rates(self,url:str)->dict:
-        response = requests.get(url, {'app_id': '73f6b88af3e4481dae94b2531d4d7ae7','base': self.base_rate})
+        response = requests.get(url, {'app_id': os.environ['FX_APP_TOKEN'],'base': self.base_rate})
         if response.ok:
             with open('rates.json','w') as output_file:
                 output_file.write(response.text)
