@@ -1,6 +1,7 @@
 import json
 import typer
 import requests
+import os
 import ipdb
 import sqlite3
 from sqlite3 import error
