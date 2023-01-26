@@ -4,3 +4,4 @@ PythonCourse/.envrc
 .DS_Store
 venv/
 *.pyc
+pythonsqlitedb.db
