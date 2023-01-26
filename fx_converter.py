@@ -4,7 +4,7 @@ import requests
 import os
 import ipdb
 import sqlite3
-from sqlite3 import error
+from sqlite3 import Error
 
 def create_connection(db_file):
     conn = None
@@ -16,6 +16,9 @@ def create_connection(db_file):
     finally:
         if conn:
             conn.close()
+
+if __name__ == '__main__':
+    create_connection(r'/Users/richwollner/PycharmProjects/pythonProject/pythonsqlitedb.db')
 
 class FX_Converter:
     def __init__(self,name:str):
